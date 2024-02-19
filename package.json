@@ -1,0 +1,16 @@
+{
+  "name": "space_website",
+  "version": "1.0.0",
+  "description": "Space Tourisim Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss build styles.css -o output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
