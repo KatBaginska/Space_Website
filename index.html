@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind CSS Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #p5-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensure canvas covers entire width */
+            height: 100%; /* Ensure canvas covers entire height */
+            z-index: 1;
+        }
+        .content {
+            z-index: 2;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto mt-8 content">
+        <h1 class="text-3xl font-bold text-center text-blue-500">Welcome to My Tailwind CSS Project</h1>
+        <div class="flex justify-center mt-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Button
+            </button>
+        </div>
+    </div>
+    <canvas id="p5-canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
