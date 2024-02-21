@@ -24,18 +24,30 @@
             position: relative;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container mx-auto mt-8 content">
-        <h1 class="text-3xl font-bold text-center text-blue-500">Welcome to My Tailwind CSS Project</h1>
-        <div class="flex justify-center mt-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Button
-            </button>
+    <header>
+        <div class="w-screen h-12 grid grid-cols-11 md:grid-cols-12 grid-rows-6">
+            <img src="Rocket.png" class="h-10 mt-2 mb-2 ml-5 w-10"/>
         </div>
-    </div>
-    <canvas id="p5-canvas"></canvas>
+    </header>
+        <div class="bg-cover bg-center w-screen h-96 mt-2 grid grid-cols-11 md:grid-cols-12 grid-rows-6" style="background-image: url('Rocket_Banner.png')">
+            <section class="flex col-start-11 row-start-6 justify-self-end md:justify-self-end md:row-start-2 mr-3"></section>      
+            
+            <div class="row-start-1 mt-3 md:row-start-2 md:mt-0 min-w-[350px] justify-self-center col-start-5 col-end-9">
+                <h1 class="text-6xl flex justify-start py-2 content-center text-white">
+                  Ready for lift off?
+                <h2 class="text-4xl flex justify-start py-2 content-center text-white">
+                  Book your visit to space
+                </h2>        
+            </div>
+        </header>
+    
+    <!-- <canvas id="p5-canvas"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="sketch.js"></script>
+    <script src="sketch.js"></script> -->
 </body>
 </html>

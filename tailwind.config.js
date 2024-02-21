@@ -2,8 +2,12 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { 
+        "Raleway": ['Raleway', 'sans-serif'] 
+    },
   },
   plugins: [],
+  }
 }
 
