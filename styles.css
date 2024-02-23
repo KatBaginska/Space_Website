@@ -1,3 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.darkModeEnabled {
+        background-color: rgb(63, 63, 235);
+        color: white;
+}

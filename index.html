@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tailwind CSS Project</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet"/>
     <!-- <style>
         body, html {
             margin: 0;
@@ -28,15 +29,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-200 dark:bg-blue-700">
+<body class="bg-gray-200 dark:bg-black">
 
     <header>
         <div class="w-screen h-12 grid grid-cols-11 md:grid-cols-12 grid-rows-6">
             <img src="Rocket.png" class="h-10 mt-2 mb-2 ml-5 w-10"/>
         </div>
-        <div>
-            <button id="dark-mode-toggle" class="fixed top-4 right-4 bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded shadow">Toggle Dark Mode</button>
-        </div>
+        <button id="dark-mode-btn" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded" onclick="document.body.classList.toggle('darkModeEnabled')">Dark Mode</button>
     </header>
         <div class="bg-cover bg-center w-screen h-96 mt-2 grid grid-cols-11 md:grid-cols-12 grid-rows-6" style="background-image: url('Rocket_Banner.png')">
             <section class="flex col-start-11 row-start-6 justify-self-end md:justify-self-end md:row-start-2 mr-3"></section>      
@@ -47,15 +46,15 @@
                 <h2 class="text-4xl font-mono flex justify-start py-2 pl-16 content-center text-white">
                   Book your visit to space
                 </h2>
-                <div class="flex items-center justify-center h-12 py-8">
-                    <button onClick="myFunction()" class="bg-blue-500 hover:bg-blue-700 font-mono text-2xl shadow-2xl --tw-shadow-color:#fff text-white font-bold py-4 px-6 rounded-lg mx-auto">
+                <div class="flex items-center justify-center h-12 py-8 ">
+                    <button id="checkmore" onClick="myFunction()" class="bg-blue-500 dark:bg-black hover:bg-blue-700 font-mono text-2xl shadow-2xl --tw-shadow-color:#fff text-white font-bold py-4 px-6 rounded-lg mx-auto">
                         Check More
                     </button>
                 </div>    
             </div>
         </div>
     <div class="bg-white h-96">
-        
+
     </div>
     
     <footer class="bg-black h-48"></footer>

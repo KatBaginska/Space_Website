@@ -9,7 +9,7 @@ module.exports = {
     'xl': '1280px',
     '2xl': '1536px'
   },
-  content: [],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       fontFamily: { 
