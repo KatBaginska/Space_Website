@@ -1,8 +1,120 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 
-.darkModeEnabled {
-        background-color: rgb(63, 63, 235);
-        color: white;
+
+
+/* Body styles */
+body {
+    background-color: #222; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center align all text */
+}
+
+/* Button styles */
+button {
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 18px; /* Increase font size for larger button */
+    display: block; /* Make button a block-level element */
+    margin: 0 auto 20px; /* Center button and add space below */
+    background-color: #545759; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+#spaceTourDetails {
+    margin-top: 40px; 
+}
+
+/* Space Tour Details section styles */
+#spaceTourDetailsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tour sections styles */
+#extremeTour,
+#cruiseTour {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align paragraphs to the left */
+    justify-content: space-between; /* Add space between paragraphs and videos */
+    margin-bottom: 40px; /* Add some space between sections */
+}
+
+#scientificTour {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of elements */
+    align-items: flex-start; /* Align paragraph to the right */
+    justify-content: space-between; /* Add space between paragraph and video */
+    margin-bottom: 40px; /* Add some space between sections */
+}
+
+/* Video styles */
+#extremeTour video,
+#cruiseTour video,
+#scientificTour video {
+    max-width: 45%; /* Adjust width of videos */
+    height: auto; /* Allow video height to adjust based on aspect ratio */
+    margin-top: 40px; /* Add some space above the video */
+    margin-bottom: 40px; /* Add some space below the video */
+}
+
+/* Title styles */
+h1 {
+    font-size: 36px; /* Increase font size for the title */
+    position: relative; /* Set position to relative to contain the video */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding to the title */
+    height: 500px; /* Set a longer height for the title */
+    overflow: hidden; /* Hide any overflowing content */
+    margin: 0; /* Remove default margin */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ffdd, 0 0 70px #00ffdd, 0 0 80px #00ffdd, 0 0 100px #00ffdd, 0 0 150px #00ffdd; /* Add glowing effect */
+}
+
+/* Title overlay styles */
+#titleOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay is above the video */
+}
+
+
+#videoBackground {
+    position: absolute; /* Position the video absolutely within the h1 element */
+    top: 0;
+    left: 0;
+    width: 100%; /* Set width to cover the entire viewport width */
+    max-width: 1550px; /* Set maximum video width */
+    height: 100%; /* Set height to cover the entire title height */
+    object-fit: cover; /* Ensure the video covers the entire area */
+    z-index: -1; /* Move the video behind other content */
+    margin: 0; /* Remove default margin */
+}
+
+/* Tour section paragraph styles */
+#extremeTour p,
+#cruiseTour p,
+#scientificTour p {
+    margin: 40px 10px; /* Add margin above and below paragraphs */
+    font-size: 18px; /* Set font size for paragraphs */
+    font-family: Arial, sans-serif; /* Use Arial font family for paragraphs */
+    text-align: left
+}
+
+/* Tour section heading styles */
+#extremeTour h3,
+#cruiseTour h3,
+#scientificTour h3 {
+    margin: 0 0 10px; /* Add margin below heading */
+    font-size: 24px; /* Increase font size for heading */
+    font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font family for heading */
 }

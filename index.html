@@ -3,64 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tailwind CSS Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="output.css" rel="stylesheet"/>
-    <!-- <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        #p5-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; 
-            height: 100%;
-            z-index: 1;
-        }
-        .content {
-            z-index: 2;
-            position: relative;
-        }
-    </style> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <title>Space Tourist Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
-<body class="bg-gray-200 dark:bg-black">
+<body>
+    <h1>
+        <div id="titleOverlay"></div> <!-- Title overlay -->
+        <video id="videoBackground" autoplay loop muted>
+            <source src="title video.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        Space Tour Recommendations
+    </h1>
+    <p>Click the button below to get a personalized space tour recommendation.</p>
+    <button onclick="recommendSpaceTour()">Get Recommendation</button>
 
-    <header>
-        <div class="w-screen h-12 grid grid-cols-11 md:grid-cols-12 grid-rows-6">
-            <img src="Rocket.png" class="h-10 mt-2 mb-2 ml-5 w-10"/>
-        </div>
-        <button id="dark-mode-btn" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded" onclick="document.body.classList.toggle('darkModeEnabled')">Dark Mode</button>
-    </header>
-        <div class="bg-cover bg-center w-screen h-96 mt-2 grid grid-cols-11 md:grid-cols-12 grid-rows-6" style="background-image: url('Rocket_Banner.png')">
-            <section class="flex col-start-11 row-start-6 justify-self-end md:justify-self-end md:row-start-2 mr-3"></section>      
-            
-            <div class="row-start-1 mt-3 md:row-start-2 md:mt-0 min-w-[350px] justify-self-center col-start-5 col-end-9">
-                <h1 class="text-6xl font-mono flex justify-start py-2 content-center text-white">
-                  Ready for lift off?
-                <h2 class="text-4xl font-mono flex justify-start py-2 pl-16 content-center text-white">
-                  Book your visit to space
-                </h2>
-                <div class="flex items-center justify-center h-12 py-8 ">
-                    <button id="checkmore" onClick="myFunction()" class="bg-blue-500 dark:bg-black hover:bg-blue-700 font-mono text-2xl shadow-2xl --tw-shadow-color:#fff text-white font-bold py-4 px-6 rounded-lg mx-auto">
-                        Check More
-                    </button>
-                </div>    
-            </div>
-        </div>
-    <div class="bg-white h-96">
+    <!-- Space Tour Recommendations -->
+    <div id="recommendations"></div>
 
+    <!-- Space Tour Details -->
+    <h2 id="spaceTourDetails">Space Tour Details</h2>
+    <div id="spaceTourDetailsContent">
+        <!-- Space tour details will be displayed here -->
+        <div id="extremeTour">
+            <h3>Extreme Space Adventure Tour</h3>
+            <p> Embark on the journey of a lifetime with our Extreme Space Adventure Tour!
+                Brace yourself for an adrenaline-fueled voyage beyond the confines of Earth, 
+                as you traverse through asteroid fields and experience the exhilarating 
+                sensation of zero gravity. This tour is tailor-made for thrill-seekers and 
+                adventurers who crave excitement and crave to push the boundaries of 
+                exploration. Get ready to witness awe-inspiring cosmic phenomena, defy 
+                gravity, and create memories that will last a lifetime. Join us on the 
+                Extreme Space Adventure Tour and embark on an unforgettable odyssey into
+                 the depths of space! </p>
+
+            <video controls>
+                <source src="adventure.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+        <div id="scientificTour">
+            <h3>Scientific Exploration Tour</h3>
+
+            <p>Prepare to unlock the mysteries of the cosmos with our Scientific Exploration Tour! 
+                Delve into the realm of discovery as you embark on an extraordinary journey through 
+                space. This meticulously curated tour offers unparalleled opportunities to conduct 
+                groundbreaking experiments in microgravity and explore alien landscapes. Whether 
+                you're an aspiring scientist or simply an avid enthusiast of the universe's wonders,
+                 this tour promises an enriching and unforgettable experience. Immerse yourself in the
+                  forefront of space exploration, where every discovery is a testament to human ingenuity 
+                  and the boundless potential of scientific inquiry. Join us on the Scientific Exploration 
+                  Tour and embark on a voyage of knowledge and discovery!</p>
+        
+            <video controls>
+                <source src="science.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Description can be added here if needed -->
+        </div>
+
+        <div id="cruiseTour">
+            <h3>Space Cruise Tour</h3>
+            <p>Embark on a celestial voyage unlike any other with our Space Cruise Tour! 
+                Relax and unwind as you glide through the vast expanse of the cosmos, 
+                surrounded by the breathtaking beauty of distant galaxies and celestial 
+                phenomena. Indulge in luxurious accommodations, savor gourmet space cuisine, 
+                and enjoy unparalleled views of the universe from the comfort of our 
+                state-of-the-art space cruiser. Whether you're seeking a peaceful retreat
+                 among the stars or a romantic getaway with a loved one, our Space Cruise Tour 
+                 offers an unforgettable journey through the wonders of space. Sit back, relax, 
+                 and let us take you on the ultimate cosmic adventure!</p>
+            </p>
+
+            <video controls>
+                <source src="relax.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Description can be added here if needed -->
+        </div>
     </div>
-    
-    <footer class="bg-black h-48"></footer>
 
-    <!-- <canvas id="p5-canvas"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>-->
-    <script src="script.js"></script>
+    <script src="javascript.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
