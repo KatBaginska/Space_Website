@@ -3,6 +3,13 @@
 @import 'tailwindcss/utilities';
 
 .darkModeEnabled {
+        #hole{
         background-color: rgb(63, 63, 235);
         color: white;
+        }
+
+        #checkmore{
+                background-color: pink;
+                color: black;
+        }
 }

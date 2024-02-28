@@ -821,8 +821,14 @@ video {
 }
 
 .darkModeEnabled {
-  background-color: rgb(63, 63, 235);
-  color: white;
+  body{
+    background-color: rgb(63, 63, 235);
+    color: white;
+  }
+  #checkmore{
+    background-color: pink;
+    color: black;
+  }
 }
 
 .hover\:bg-blue-700:hover {
