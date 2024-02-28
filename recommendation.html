@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourist Website</title>
+    <link rel="recommendation_styles" href="recommendation_styles.css"> <!-- Link to the CSS file -->
+    <style>
+        @import "recommendation_styles.css"
+    </style>
+</head>
+<body>
+    <h1>
+        <div id="titleOverlay"></div> <!-- Title overlay -->
+        <video id="videoBackground" autoplay loop muted>
+            <source src="title video.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        Space Tour Recommendations
+    </h1>
+    <p>Click the button below to get a personalized space tour recommendation.</p>
+    <button onclick="recommendSpaceTour()">Get Recommendation</button>
+
+    <!-- Space Tour Recommendations -->
+    <div id="recommendations"></div>
+
+    <!-- Space Tour Details -->
+    <h2 id="spaceTourDetails">Space Tour Details</h2>
+    <div id="spaceTourDetailsContent">
+        <!-- Space tour details will be displayed here -->
+        <div id="extremeTour">
+            <h3>Extreme Space Adventure Tour</h3>
+            <p> Embark on the journey of a lifetime with our Extreme Space Adventure Tour!
+                Brace yourself for an adrenaline-fueled voyage beyond the confines of Earth, 
+                as you traverse through asteroid fields and experience the exhilarating 
+                sensation of zero gravity. This tour is tailor-made for thrill-seekers and 
+                adventurers who crave excitement and crave to push the boundaries of 
+                exploration. Get ready to witness awe-inspiring cosmic phenomena, defy 
+                gravity, and create memories that will last a lifetime. Join us on the 
+                Extreme Space Adventure Tour and embark on an unforgettable odyssey into
+                 the depths of space! </p>
+
+            <video controls>
+                <source src="adventure.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+        <div id="scientificTour">
+            <h3>Scientific Exploration Tour</h3>
+
+            <p>Prepare to unlock the mysteries of the cosmos with our Scientific Exploration Tour! 
+                Delve into the realm of discovery as you embark on an extraordinary journey through 
+                space. This meticulously curated tour offers unparalleled opportunities to conduct 
+                groundbreaking experiments in microgravity and explore alien landscapes. Whether 
+                you're an aspiring scientist or simply an avid enthusiast of the universe's wonders,
+                 this tour promises an enriching and unforgettable experience. Immerse yourself in the
+                  forefront of space exploration, where every discovery is a testament to human ingenuity 
+                  and the boundless potential of scientific inquiry. Join us on the Scientific Exploration 
+                  Tour and embark on a voyage of knowledge and discovery!</p>
+        
+            <video controls>
+                <source src="science.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Description can be added here if needed -->
+        </div>
+
+        <div id="cruiseTour">
+            <h3>Space Cruise Tour</h3>
+            <p>Embark on a celestial voyage unlike any other with our Space Cruise Tour! 
+                Relax and unwind as you glide through the vast expanse of the cosmos, 
+                surrounded by the breathtaking beauty of distant galaxies and celestial 
+                phenomena. Indulge in luxurious accommodations, savor gourmet space cuisine, 
+                and enjoy unparalleled views of the universe from the comfort of our 
+                state-of-the-art space cruiser. Whether you're seeking a peaceful retreat
+                 among the stars or a romantic getaway with a loved one, our Space Cruise Tour 
+                 offers an unforgettable journey through the wonders of space. Sit back, relax, 
+                 and let us take you on the ultimate cosmic adventure!</p>
+            </p>
+
+            <video controls>
+                <source src="relax.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Description can be added here if needed -->
+        </div>
+    </div>
+
+    <script src="javascript.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
