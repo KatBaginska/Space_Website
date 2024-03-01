@@ -8,13 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="styles.css" ref="styles">
 </head>
-<body class="bg-gray-200">
+<body class="bg-black">
     <header>
-        <div class="w-screen h-12 grid grid-cols-11 md:grid-cols-12 grid-rows-6">
-            <img src="Rocket.png" onClick="homePage()" class="h-10 mt-2 mb-2 ml-5 w-10"/>
+
+        <div class="flex justify-between items-center">
+            <span class="mr-2 justify-start text-white">Menu Item 1</span>
+            
+            <!-- Add more menu items as needed -->
+        
+        
+            <img src="StarVoyage_Dark.png" onClick="homePage()" class="h-40 mt-2 mb-2 ml-5 object-cover"/>
+            <!-- <button id="dark-mode-btn" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded" onclick="document.body.classList.toggle('darkModeEnabled')">Dark Mode</button> -->
+            <span class="mr-2">Menu Item 2</span>
         </div>
-        <div class="bg-white h-2 mt-6"></div>
+    </header>
+    <div class="bg-white h-2"></div>
         <div class="grid-cols-12 flex justify-center h-1/3">
             <img src="astro.png" class="p-5 w-1/2 rounded-lg">
             <p class="text-8xl font-mono w-1/2 text-white text-wrap p-10 flex justify-center">
