@@ -3,62 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tailwind CSS Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="output.css" rel="stylesheet"/>
-    <!-- <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        #p5-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; 
-            height: 100%;
-            z-index: 1;
-        }
-        .content {
-            z-index: 2;
-            position: relative;
-        }
-    </style> -->
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="styles-corrinne.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body id="hole" class="bg-gray-200 dark:bg-black">
-    <header>
-        <div class="w-screen h-12 grid grid-cols-11 md:grid-cols-12 grid-rows-6">
-            <img src="Rocket.png" class="h-10 mt-2 mb-2 ml-5 w-10"/>
+
+<body>
+ <header>
+<!-- navbar for use across all pages, styling is at top of styles-corrinne.css-->
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">
+            <img src="./Images/logo.png" alt="Space Image" width = 250px>
         </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./CheckMore.html">Destinations</a></li>
+                <li><a href="./recommendation.html">Recommendations</a></li>
+                <li><a href="./booking-form.html">Bookings</a></li>
+            </ul>
+        </div>
+      </div>  
+    </nav>
+<!-- navbar ends here -->
+
+
+      <div class="hero-image">
+        <div class="header-section">
+         <h1 id="header-animate">Ready for lift off?</h1>
+         <h4 id="subheader-animate">Book your visit to space today!</h5>
+          <a href="./booking-form.html">
+          <button type="button" id="btn-header">Book Now</button>
+          </a>
+        </div>
+      </div>
     </header>
-        <div class="bg-cover bg-center w-screen h-96 mt-2 grid grid-cols-11 md:grid-cols-12 grid-rows-6" style="background-image: url('Rocket_Banner.png')">
-            <section class="flex col-start-11 row-start-6 justify-self-end md:justify-self-end md:row-start-2 mr-3"></section>      
-            
-            <div class="row-start-1 mt-3 md:row-start-2 md:mt-0 min-w-[350px] justify-self-center col-start-5 col-end-9">
-                <h1 class="text-6xl font-mono flex justify-start py-2 content-center text-white">
-                  Ready for lift off?
-                <h2 class="text-4xl font-mono flex justify-start py-2 pl-16 content-center text-white">
-                  Book your visit to space
-                </h2>
-                <div class="flex items-center justify-center h-12 py-8 ">
-                    <button id="checkmore" onClick="myFunction()" class="bg-blue-500 hover:bg-blue-700 font-mono text-2xl shadow-2xl --tw-shadow-color:#fff text-white font-bold py-4 px-6 rounded-lg mx-auto">
-                        Check More
-                    </button>
-                </div>    
-            </div>
+
+<main>
+  <div class="embark">
+    <h6 id="embark">Embark on an out-of-this-world adventure across the cosmos and delve into the secrets of the universe.</h6>
+  </div>
+
+
+  <div class="destination-section">
+    <h2 class="section-title" id="test4">Destinations</h2>
+      <div class="all-three-images">
+        <div id="space-station-container">
+          <div id="station-img-bg"></div>
+          <div class="captions-on-top-left" id="station-title">Space Station</div>
+          <div class="hidden-captions" id="hidden-station-caption">Experience the ultimate adventure to the International Space Station, where you'll float in zero gravity and meet our remarkable Astronauts.</div>
         </div>
-    <div class="bg-white h-96">
+  
+        <div id="earth-orbit-container">
+          <div id="orbit-img-bg"></div>
+          <div class="captions-on-top-left" id="orbit-title">Earth Orbit</div>
+          <div class="hidden-captions" id="hidden-orbit-caption">Marvel at the wonders of the world from a whole new perspective and join us as we orbit our home planet, Earth.</div>
+        </div>
+  
+        <div id="the-moon-container">
+              <div id="moon-img-bg"></div>
+              <div class="captions-on-top-left" id="moon-title">The Moon</div>
+              <div class="hidden-captions" id="hidden-moon-caption">Embark on your very own Apollo 11 mission and join us as we voyage to our celestial neighbor, the Moon.</div>
+        </div>
+      </div>
+  </div>
 
-    </div>
+
+
+  <div class="video">
+    <video width="90%" controls>
+      <source src="./Images/Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
     
-    <footer class="bg-black h-48"></footer>
+    
+  <div class="why-join-section">
+    <h2 class="section-title">Why join us?</h2>
+    <div class="why-us">
+      <div class="image">
+        <div class="rocket">
+          <img id="rocket-launch" src="./Images/Rocket launch.jpg" alt="Rocket launch">
+        </div>
+        <p class="p-why">206 launches to date</p>
+      </div>
+      <div class="image">
+        <img id="spacesuit" src="./Images/spacesuit.jpg" alt="Spacesuit">
+        <p class="p-why">Complimentary spacesuit provided</p>
+      </div>
+      <div class="image">
+          <img id="image3" src="./Images/Space-station-why-us.jpg" alt="Space Station">
+          <p class="p-why">3 incredible destinations</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- <canvas id="p5-canvas"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>-->
-    <script src="script.js"></script>
+</main>
+
+<div class="footerCTA">
+  <h6>Book today for your adventure of a lifetime.</h6>
+  <a href="./booking-form.html" target="_blank">
+    <button type="button" id="btn-footer">Book Now</button>
+  </a>
+</div>
+
+ <!-- Jadene's Footer, styling at bottom of styles-corrinne.css -->
+<footer> 
+  <div class="row">
+   
+    <div class="column">
+      <img src="./Images/orbit-logo-black.png" alt="nasa logo" class="logo-footer"><br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+
+    <div class="column">
+      <h5><a href="#">About</a></h5>
+      <h5><a href="#">FAQs</a></h5>
+      <h5><a href="#">The Mission</a></h5>
+      <h5><a href="#">Contact Us</a></h5>
+    </div>
+
+    <div class="column">
+      <h5><a href="#">Destinations</a></h5>
+      <h5><a href="#">Space Station</a></h5>
+      <h5><a href="#">Earth Orbit</a></h5>
+      <h5><a href="#">Moon</a></h5>
+    </div>
+  </div>
+</footer>
+<!-- footer end -->
+
+<script src="script-corrinne.js"></script>
 </body>
 </html>

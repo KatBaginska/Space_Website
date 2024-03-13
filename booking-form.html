@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles-jadene.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+   <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  a {
+  color: black;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c2c2c2;
+}
+
+.container {
+  max-width: 600px;
+  border-radius: 5px;
+  background-color: #110e0e;
+  padding: 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ /* Logo styles */
+ .logo {
+        max-width: 105px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="./Images/logo.png" width = 250px>
+      </div>
+      <div class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./CheckMore.html">Destinations</a></li>
+            <li><a href="./recommendation.html">Recommendations</a></li>
+            <li><a href="./booking-form.html">Bookings</a></li>
+        </ul>
+      </div>
+    </div>  
+  </nav>
+
+<h2>Make a Booking</h2>
+
+<h4>We will send you a link to view upcoming launches and book your place. <br> Please register your interest below</h4>
+
+<div class="form-container">
+  <form action="/action_page.php">
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label for="country"><b>Country</b></label>
+    <select id="country" name="country">
+      <option value="australia">United Kingdom</option>
+      <option value="canada">Canada</option>
+      <option value="usa">South Africa</option>
+    </select>
+
+    <label for="subject"><b>Subject</b></label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit Form">
+  </form>
+</div>
+
+<footer>
+  <div class="row">
+   
+    <div class="column">
+      <img src="./Images/orbit-logo-black.png" alt="nasa logo" class="logo"><br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+
+    <div class="column">
+      <h5><a href="#">About</a></h5>
+      <h5><a href="#">FAQs</a></h5>
+      <h5><a href="#">The Mission</a></h5>
+      <h5><a href="#">Contact Us</a></h5>
+    </div>
+
+    <div class="column">
+      <h5><a href="#">Destinations</a></h5>
+      <h5><a href="#">Space Station</a></h5>
+      <h5><a href="#">Earth Orbit</a></h5>
+      <h5><a href="#">Moon</a></h5>
+    </div>
+    
+  </div>
+</footer>
+
+</body>
+</html>

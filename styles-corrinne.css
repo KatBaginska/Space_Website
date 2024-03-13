@@ -1,0 +1,419 @@
+/* start of navbar styling */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.logo {
+    margin-left: 108px;
+    margin-top: 0px;;
+}
+
+.menu ul {
+    gap: 48px;
+    margin-right: 68px;
+    margin-top: 70px;
+}
+
+.menu ul li {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    display: inline;
+    padding: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #FFEF5F;
+}
+
+/* end of navbar styling */
+
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url(./Images/hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    /* background-attachment: fixed; */
+    height: 1080px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 98px;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    margin: auto;
+}
+
+h6 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    margin: auto;
+}
+
+p {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* header section */
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    text-align: center;
+    padding: 180px;
+    gap: 20px;
+} 
+
+button {
+    padding: 8px 40px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+#btn-header {
+    margin-top: 12px;
+}
+
+.embark {
+    width: 100%;
+    margin: auto;
+    padding: 300px 0px 450px 0px;
+}
+
+#embark {
+    text-align: center;
+    width: 45%;
+}
+
+
+/* destinations section  */
+
+.destination-section { 
+    margin-top: 200px;
+    width: 100%;
+    margin: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.all-three-images {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+}
+
+#space-station-container{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+#station-img-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./Images/International_Space_Station_in_2021.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+#earth-orbit-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+#orbit-img-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./Images/EarthOrbit.webp);
+    background-size: cover;
+}
+
+#the-moon-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+#moon-img-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./Images/Moon.jpg);
+    background-position: cover;
+    background-position-y: bottom;
+    background-size: 650px;
+    background-repeat: no-repeat;
+}
+
+.captions-on-top-left {
+    position: absolute;
+    text-align: left;
+    top: 0%;
+    left: 10%;
+    font-size: 20px;
+    letter-spacing: 1%;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: yellow;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+} 
+
+.hidden-captions {
+    position: absolute;
+    margin: 50px;
+    text-align: center;
+    top: 50%;
+    font-size: 20px;
+    letter-spacing: 1%;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    cursor: default;
+} 
+
+/* video section  */
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 400px 0px;
+}
+
+iframe {
+    margin: 300px 0px;
+}
+
+
+/* why join section */
+
+.why-join-section {
+    margin: 0px 0px 200px 0px;
+}
+
+.why-us {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 0px 80px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+    border: transparent solid 1px;
+    padding: 30px;
+    height: 400px;
+}
+
+.image:hover {
+    padding: 30px;
+}
+
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.rocket {
+    overflow: hidden;
+}
+
+#rocket-launch {
+    object-position: 11px 70px;
+    object-fit: cover;
+    transform: scale(1.6);
+}
+
+#spacesuit {
+    object-position: 0px -60px;
+    object-fit: cover;
+}
+
+#image3 {
+    object-position: right;
+}
+
+.p-why {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.footerCTA {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(2, 3, 72);
+    color: #fff;
+    padding: 60px;
+    margin: 0px;
+}
+
+#btn-footer {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+#btn-footer:hover{
+    color: rgb(255, 255, 255);
+    background-color: #4f4f81;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 3px 5px rgba(25, 25, 25, 0.751)
+}
+
+
+
+
+
+
+
+
+
+/* Jadene's footer styling from here onwards */
+
+footer {
+    background-color: #ffffff;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    max-width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  h5 {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    }
+
+a {
+    color: black;
+}
+
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Youtube */
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  /* Google */
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .container {
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: #110e0e;
+    padding: 20px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+    margin: 0px 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   /* Logo styles */
+   .logo-footer {
+          max-width: 150px;
+          margin-top: 40px;
+          margin-left: 50px;
+          margin-bottom: 10px;
+        }
