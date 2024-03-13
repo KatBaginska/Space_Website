@@ -1,6 +1,3 @@
-
-
-
 /* Body styles */
 body {
     background-color: #222; /* Dark background color */
@@ -58,7 +55,7 @@ button:hover {
 #extremeTour video,
 #cruiseTour video,
 #scientificTour video {
-    max-width: 45%; /* Adjust width of videos */
+    max-width: 40%; /* Adjust width of videos */
     height: auto; /* Allow video height to adjust based on aspect ratio */
     margin-top: 40px; /* Add some space above the video */
     margin-bottom: 40px; /* Add some space below the video */
