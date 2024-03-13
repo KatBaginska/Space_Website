@@ -21,8 +21,25 @@
     </style>
 </head>
 <body class="bg-black">
+
+    <nav>
+        <div class="nav-bar">
+          <div class="logo">
+              <a href="./index.html"><img src="./Images/logo.png" alt="Space Image" width = 250px></a>
+          </div>
+          <div class="menu">
+              <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./CheckMore.html">Destinations</a></li>
+                  <li><a href="./recommendation.html">Recommendations</a></li>
+                  <li><a href="./booking-form.html">Bookings</a></li>
+                  <li><button id="dark-mode-btn" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded" onclick="document.body.classList.toggle('darkModeEnabled')">Dark Mode</button></li>
+              </ul>
+          </div>
+        </div>  
+      </nav>
     
-    <header class="fixed top-0 left-0 w-full  flex items-center bg-gray-900 z-50">
+    <!-- <header class="fixed top-0 left-0 w-full  flex items-center bg-gray-900 z-50">
 
         <div class="side-menu h-40 w-60 bg-gray-800 text-white overflow-y-auto transform -translate-x-full transition-transform duration-300" id="side-menu">
             <ul class="py-4">
@@ -45,15 +62,11 @@
     
         
         <button id="dark-mode-btn" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded" onclick="document.body.classList.toggle('darkModeEnabled')">Dark Mode</button>
-    </header>
+    </header> -->
 
         
 
-        <img src="StarVoyage_Dark.png" alt="Star Voyage Logo" class="h-16 cursor-pointer ml-20 justify-center " onclick="homePage()">
-        <button id="dark-mode-btn" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded" onclick="document.body.classList.toggle('darkModeEnabled')">Dark Mode</button>
-    </header>
-
-    <div class="bg-pink-500 h-2"></div>
+    
 
     <section class="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
         <div class="flex justify-center items-center slide">
@@ -62,7 +75,7 @@
         <div class="flex flex-col justify-center items-center slide">
             <h1 class="text-4xl md:text-6xl font-semibold font-sans text-blue-500 text-center mb-8">Space Stations</h1>
             <p class="font-semibold text-blue-500 text-2xl py-8 text-center">Travel destination space stations offer unparalleled experiences for those seeking adventure beyond Earth's atmosphere. These stations serve as gateways to the cosmos, providing opportunities for scientific research, space tourism, and international collaboration. Whether marveling at Earth's beauty from orbit or conducting experiments in microgravity, space stations represent humanity's collective endeavor to explore and understand the universe.</p>
-            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">Book Now</a>
+            <a href="./booking-form.html" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">Book Now</a>
         </div>
     </section>
 
@@ -73,7 +86,7 @@
         <div class="flex flex-col justify-center items-center slide">
             <h1 class="text-4xl md:text-6xl font-semibold text-pink-500 text-center mb-8">Earth Orbit</h1>
             <p class="font-semibold text-pink-500 text-2xl py-8 text-center">Journeying to Earth's orbit opens up a realm of possibilities, from experiencing weightlessness to witnessing breathtaking views of our planet. Earth orbit destinations offer unique opportunities for space tourists to float effortlessly in microgravity and gaze upon the Earth's curvature. These experiences not only ignite a sense of wonder but also foster a deeper appreciation for the fragility and beauty of our home planet.</p>
-            <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold">Book Now</a>
+            <a href="./booking-form.html" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold">Book Now</a>
         </div>
     </section>
 

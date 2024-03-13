@@ -6,3 +6,46 @@
     background-color: white;
     color: black;
 }
+
+/* start of navbar styling */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.logo {
+    margin-left: 108px;
+    margin-top: 0px;;
+}
+
+.menu ul {
+    gap: 48px;
+    margin-right: 68px;
+    margin-top: 70px;
+}
+
+.menu ul li {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    display: inline;
+    padding: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #FFEF5F;
+}
+
+/* end of navbar styling */
