@@ -12,12 +12,11 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: { 
-        "Raleway": ['Raleway', 'sans-serif']
-      }
+      fontFamily: {
+        'sans': ['Space Grotesk', 'sans-serif'],
     },
   },
   plugins: [],
   }
-
+}
 
